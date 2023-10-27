@@ -3,21 +3,17 @@ package calc.hadling;
 import java.util.Scanner;
 
 public class Reader {
-    int x;
-    char op;
     Scanner iScan = new Scanner(System.in);
 
     public Reader() {
     }
 
     public int read(){
-        x = Integer.parseInt(iScan.nextLine());
-        return x;
+        return Integer.parseInt(iScan.nextLine());
     }
 
     public char readOperator(){
-        op = iScan.nextLine().charAt(0);
-        return op;
+        return iScan.nextLine().charAt(0);
     }
 
 
