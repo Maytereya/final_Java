@@ -1,4 +1,4 @@
-package calc.view;
+package calc.hadling;
 
 import java.util.Scanner;
 

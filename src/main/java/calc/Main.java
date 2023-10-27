@@ -2,8 +2,8 @@ package calc;
 
 import calc.controller.Calculator;
 import calc.controller.Logging;
-import calc.view.Dialoger;
-import calc.view.Reader;
+import calc.hadling.Dialoger;
+import calc.hadling.Reader;
 
 public class Main {
     public static void main(String[] args) {
