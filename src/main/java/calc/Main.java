@@ -2,25 +2,25 @@ package calc;
 
 import calc.controller.Calculator;
 import calc.hadling.Logger;
-import calc.hadling.Dialoger;
+import calc.hadling.Notifier;
 import calc.hadling.Reader;
 
 public class Main {
     public static void main(String[] args) {
-        Dialoger dialog = new Dialoger();
+        Notifier notifier = new Notifier();
         Reader reader = new Reader();
         Logger logger = new Logger();
 
-        dialog.dialog1();
+        notifier.dialog1();
         int a = reader.read();
 
-        dialog.dialog2();
+        notifier.dialog2();
         int b = reader.read();
 
-        dialog.dialogOperator();
+        notifier.dialogOperator();
         char op = reader.readOperator();
 
-        dialog.dialogResult(Calculator.calculate(op, a, b));
+        notifier.dialogResult(Calculator.calculate(op, a, b));
         logger.loggingFiling(a, b, op);
     }
 }

@@ -1,8 +1,8 @@
 package calc.hadling;
 
-public class Dialoger {
+public class Notifier {
 
-    public Dialoger() {
+    public Notifier() {
     }
 
     public void dialog1() {
